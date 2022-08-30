@@ -1,0 +1,181 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.header{
+background-color: #494848b9;
+display: flex;
+align-items:center;
+}
+.header img{
+padding: 20px;
+}
+.header ul{
+
+list-style: none;
+display: flex;
+
+}
+.header li{
+  width: 300;
+padding: 15px;
+display: flex;
+
+}
+.header a {
+color: white;
+}
+
+.header a:hover{
+
+color:black ;
+font-weight: bold;
+}
+
+.header{
+    flex-direction: column;
+    }
+
+.footer{
+    background-color: #1f1f1fb9;
+    
+    
+  
+ }
+
+ .footer ul{
+
+    list-style: none;
+    width: 450px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+      }
+
+.footer li{
+    padding: 20px;
+}
+
+.footer a {
+     color: white;
+}
+
+.footer a:hover{
+
+    color:black ;
+    font-weight: bold;   
+
+}
+.footer h4{
+    margin: 10px;
+    padding: 15px;
+    }
+
+.main-index{
+    min-height: 60vh;
+    background-color: white;
+    /* max-height: 950px; */
+     
+     
+  }
+.main-index form{
+
+padding: 20px;
+
+}
+.main-index h1{
+padding: 20px;
+}
+.main-index h3{
+padding: 20px;
+
+}
+.main-contacto{
+
+min-height: 60vh;
+background-color:  #808080b9;
+
+}
+.main-contacto form{
+padding: 50px;
+
+}
+
+.main-productos{
+ padding: 50px;
+min-height: 60vh;
+list-style: none;
+background-color:white
+
+
+
+}
+.main-comoComprar{
+    padding: 50px;
+    min-height: 60vh;
+    background-color: #808080b9;
+   
+}
+    .color-boton{
+
+        background-color: #3f3c3c;
+   }
+
+   .carou{
+
+    padding: 20px;
+    max-width: 800px;
+    max-height: 700px;
+    
+    }
+
+.grid-container{
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+      }
+      
+ .imagen1 { grid-area: 1 / 1 / 2 / 2; }
+.imagen2 { grid-area: 1 / 2 / 2 / 4; }
+.imagen3 { grid-area: 1 / 3 / 2 / 4; }
+.imagen4 { grid-area: 2 / 1 / 3 / 2; }
+.imagen5 { grid-area: 2 / 2 / 3 / 3; }
+.imagen6 { grid-area: 2 / 3 / 3 / 4; }
+
+.grid-container img{
+
+width: 250px;
+
+
+}
+@media (max-width: 740px) {
+    .header{
+        flex-direction: column;
+    }
+    .footer ul{
+        width: 266px;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+  
+    }
+
+}
+@media (max-width: 450px) {
+    .grid-container{
+     grid-template-columns: repeat(1,1fr);
+     grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+
+
+    
+    
